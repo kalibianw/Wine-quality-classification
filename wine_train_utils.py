@@ -50,7 +50,7 @@ def training(model, x_train, y_train, x_valid, y_valid, ckpt_path):
             callbacks.EarlyStopping(
                 monitor=monitor,
                 min_delta=1e-4,
-                patience=50,
+                patience=25,
                 verbose=2
             ),
             callbacks.ReduceLROnPlateau(

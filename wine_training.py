@@ -3,14 +3,12 @@ from tensorflow.keras.utils import to_categorical
 import matplotlib.pyplot as plt
 import wine_data_utils as utils
 import wine_train_utils as wt
-import tensorflow as tf
 import numpy as np
 
-tf.keras.backend.clear_session()
 
-train_path = "Data/train.csv"
-ckpt_path = r"C:\Users\admin\Documents\AI\ckpt\wine\wine.ckpt"
-model_save_path = r"C:\Users\admin\Documents\AI\model\wine.h5"
+train_path = r"Data\train.csv"
+ckpt_path = r"ckpt\wine.ckpt"
+model_save_path = "wine.h5"
 
 train_size = 0.7
 

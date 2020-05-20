@@ -3,12 +3,12 @@ import wine_data_utils as utils
 import numpy as np
 import csv
 
-model_save_path = r"C:\Users\admin\Documents\AI\model\wine.h5"
+model_save_path = "wine.h5"
 
 model = models.load_model(model_save_path)
 model.summary()
 
-with open('Data/test.csv', 'r') as handler:
+with open(r'Data\test.csv', 'r') as handler:
     reader = csv.reader(handler)
     raw_test = list()
     next(reader)
